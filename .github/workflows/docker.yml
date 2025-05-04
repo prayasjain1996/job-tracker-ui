@@ -84,6 +84,6 @@ jobs:
       run: |
         aws ecs update-service \
           --cluster ${{ env.ECS_CLUSTER_NAME }} \
-          --service ${{ env.ECS_SERVICE_NAME }}-frontend \
-          --task-definition frontend-task-definition \
+          --service ${{ env.ECS_SERVICE_NAME }} \
+          --task-definition job-tracker-ui \
           --desired-count 2
