@@ -7,8 +7,8 @@ on:
 
 env:
   AWS_REGION: ap-south-1  # Set region as an environment variable
-  ECS_CLUSTER_NAME: job-tracker-cluster  # Name of your ECS cluster
-  ECS_SERVICE_NAME: job-service  # Name of your ECS service
+  ECS_CLUSTER_NAME: job-tracker-cluster-form  # Name of your ECS cluster
+  ECS_SERVICE_NAME: job-tracker-ui-service-x88ihj17  # Name of your ECS service
   AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}  # AWS account ID (from GitHub secrets)
   ECR_REPOSITORY_FRONTEND: job-tracker-ui  # ECR repository for frontend
 
